@@ -187,6 +187,27 @@ These backends can be big, and have many considerations behind their design.
   his code will run on. He works closely with his Operations engineers to make sure his
   code is performant and on capacity planning.
 
+  .. _whats-developer-francesca:
+
+* **Francesca is one of five students working on the website for her school's
+  internationally famous hackathon.** She and her friends run a Tornado web server
+  with a Postgres database. For the front end, they use GitHub pages and React.
+  Their website is hosted on Amazon Web Services. The team uses New Relic and
+  Pingdom to profile the code to see what time, CPU, and memory it consumes, as
+  well as to alert them if any aspect of the site is acting abnormally.
+
+.. _whats-developer-jean:
+
+* **Jean works at a large technology firm.** The company has many teams of
+  developers, all working on different aspects of their product. Jean is a data
+  engineer who manages the collection and display of certain statistics that are
+  useful for other employees of the company. If Jean has any issues with their
+  computer or development environment, they ask the people running the
+  information technology desk. Core parts of the technology at this company are
+  maintained by site reliability engineers. Jean also has an embedded site
+  reliability engineer on their team who makes sure that the features they
+  create are scalable and maintainable.
+
 .. todo:: "What is Development" Section needs more developer perspective.
 
 
@@ -272,7 +293,7 @@ decided on by others.
 We challenge that mindset. System administration is not about saying "no" to 
 requests but about finding ways to intelligently fulfill the needs of a business
 in a way that increases maintainability, usability, and security for a group of
-people and enhances their ability to useful work.
+people and enhances their ability to do useful work.
 
 Another perception issue is that of the `BOFH
 <http://www.theregister.co.uk/data_centre/bofh/>`_. While there's something of

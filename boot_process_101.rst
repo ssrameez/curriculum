@@ -75,7 +75,7 @@ hardware exists:
 
 Once the existence of the hardware has been confirmed, it must be configured.
 
-The BIOS has its own memory storage known as the CMOS (Complimentary
+The BIOS has its own memory storage known as the CMOS (Complementary
 Metal Oxide Semiconductor). The CMOS contains all of the settings the
 BIOS needs to save, such as the memory speed, CPU frequency
 multiplier, and the location and configuration of the hard drives and
@@ -203,7 +203,7 @@ into memory.
 There are a few common bootloaders. We'll discuss the GRand Unified
 Bootloader (GRUB), a bootloader used by many Linux distributions today.
 
-GRUB is a "chain bootloader" initializes itself in stages. These stages are:
+GRUB is a "chain bootloader," meaning it initializes itself in stages. These stages are:
 
 * *Stage 1* - This is the very tiny application that can exist in that first
   part of the drive. It exists to load the next, larger part of GRUB.
@@ -216,10 +216,10 @@ GRUB is a "chain bootloader" initializes itself in stages. These stages are:
 On an MBR-formatted drive and standard BIOS
 -------------------------------------------
 
-These stages must fit in that first 448 bytes of the partition table. Generally,
-Stage 1 and Stage 1.5 are small enough to exist in that first 448 bytes. They
-contain the appropriate logic that allow the loader to read the filesystem that
-Stage 2 is located on.
+These stages must fit in that first 448 bytes of the boot loader information 
+block table. Generally, Stage 1 and Stage 1.5 are small enough to exist in that 
+first 448 bytes. They contain the appropriate logic that allow the loader to 
+read the filesystem that Stage 2 is located on.
 
 On a GPT-formatted drive and UEFI
 ---------------------------------
@@ -320,7 +320,7 @@ management tool for data centers.
 Getty
 =====
 
-.. todo: Check this section. I think i've got it down, but I'm not super
+.. todo:: Check this section. I think i've got it down, but I'm not super
          familiar with this part.
 
 After all the system initialization scripts have run, we're ready to present the

@@ -54,7 +54,7 @@ SSH
 
 Common: ``ssh``
 ---------------
-If your operating system has a good terminal emulator available (eg, Linux, BSD,
+If your operating system has a good terminal emulator available (e.g., Linux, BSD,
 OSX), then the ``ssh`` command line utility is by far the best tool to use for
 SSH interactions.
 
@@ -135,7 +135,7 @@ In some situations it may be necessary to forward ports from the remote
 machine to the local one. While not as common as other port forwarding
 techniques, it is often the only option available in the situations
 where it sees use. For this feature, OpenSSH listens to a port on the
-remote machine and sends the traffic to the remote host and port. The
+remote machine and sends the traffic to the local host and port. The
 syntax for the ``-R`` option is the same as for the ``-L`` option
 described above. As an example, to have OpenSSH tunnel the remote port
 9090 to the local port 8000 on host ``workstation``:
@@ -271,13 +271,13 @@ Reattach to a session:
 
 Share a session:
 
-User alice starts session:
+User Alice starts session:
 
 .. code-block:: console
 
   screen -S session1
 
-User bob can then attach to the same session (both alice and bob can send commands to the session):
+User Bob can then attach to the same session (both Alice and Bob can send commands to the session):
 
 .. code-block:: console
 
@@ -477,7 +477,7 @@ There is a nifty cheat sheet [#]_ for the most important
 
 byobu
 -----
-Byobu_ is a wrapper around one of screen or tmux. It
+[Byobu]_ is a wrapper around one of screen or tmux. It
 provides profile support, F-keybindings, configuration utilities and a
 system status notification bar for most Linux, BSD or Mac operating systems.
 

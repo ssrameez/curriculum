@@ -26,7 +26,8 @@ this scenario easier: the command-line editing mode.
 
 The command-line editing mode emulates the movement functions of two common text editors,
 ``emacs`` and ``vi``.  In the case of the shell, the cursor's movement is being controlled.
-.. todo: Tighten up the above sentence.  It's wordy and doesn't seem to make the point I want it to make. 
+
+.. todo:: Tighten up the above sentence.  It's wordy and doesn't seem to make the point I want it to make. 
 
 By default, ``bash`` operates in ``emacs`` mode.
 
@@ -42,7 +43,16 @@ The following commands are very common while using the ``emacs`` mode.
 - ``Ctrl-u``: Delete from the cursor backward
 - ``Ctrl-r``: Search the command history
 
-.. todo: Add vi examples. I haven't used that mode in years and will need to look up the mirror version of the above commands.
+The following commands are very common while using the ``vi`` mode.
+
+- ``h``: Move backward by one character
+- ``l``: Move forward by one character
+- ``w``: Move forward by one word
+- ``0``: Move to the beginning of the line
+- ``$``: Move to the end of the line
+- ``d$``: Delete from the cursor to the end of the line
+- ``d0``: Delete from the cursor the beginning of the line
+- ``:history s``: Search the command history
 
 Setting the Mode
 ~~~~~~~~~~~~~~~~
@@ -221,7 +231,7 @@ output of ``history``: ::
 
 Searching History
 ^^^^^^^^^^^^^^^^^
-Finally, one can search the history by typing ``Ctlr-r`` followed by a string to match a command: ::
+Finally, one can search the history by typing ``Ctrl-r`` followed by a string to match a command: ::
 
   $ (reverse-i-search)`ls': ls -F
 

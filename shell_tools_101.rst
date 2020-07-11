@@ -3,7 +3,12 @@ Useful shell tools
 
 When you work in a unix environment, you will need to make frequent use of the command line tools available to you in order to complete the tasks you have.
 
-.. todo:: Mention that the philosophy here is to have many tools which perform a few discrete tasks, and run them together to get what you want.
+The Unix Philosophy
+===================
+
+Unix is characterized by its modular design philosophy. 
+Unix programs are small, single purpose tools that can easily be chained together with other Unix programs. 
+This modular approach allows for a much simpler, more flexible system, since you can combine multiple command line programs to solve a unique problem, without having to write a whole new program to get the job done.
 
 Working with your system
 ========================
@@ -599,7 +604,7 @@ The ``END`` pattern tells ``awk`` what to do after all lines in the file have be
 In our case, that involves printing out the average age of all students.
 To get the average age, the sum of all ages (stored in variable ``sum``) was divided by the total number of lines in the file, represented by ``NR``.
 
-In addition to the ``END`` pattern, ``awk`` also provides a ``BEGIN`` pattern, which describes an action that needs to be taken before a the first line of the file is processed.
+In addition to the ``END`` pattern, ``awk`` also provides a ``BEGIN`` pattern, which describes an action that needs to be taken before the first line of the file is processed.
 
 For example:
 
